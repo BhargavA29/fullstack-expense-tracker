@@ -22,7 +22,7 @@ import { toast } from 'sonner'
 
 
 
-function CreateBudget() {
+function CreateBudget({refreshData}) {
 
     const [emojiIcon, setEmojiIcon] = useState('🤩');
     const [openEmojiPicker, setOpenEmojiPicker] = useState(false);
@@ -43,6 +43,7 @@ function CreateBudget() {
             }).returning({ insertedId: Budgets.id })
 
         if (result) {
+            refreshData()
             toast('New Budget Created')
         }
     }
