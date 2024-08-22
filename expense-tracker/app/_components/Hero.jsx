@@ -9,7 +9,7 @@ function Hero() {
             <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex">
                 <div className="mx-auto max-w-xl text-center">
                     <h1 className="text-3xl font-extrabold sm:text-5xl">
-                        Manage Your Expense
+                        Manage Your Expense</h1><h1 className="text-3xl font-extrabold sm:text-5xl">
                         <strong className="font-extrabold text-primary sm:block">Control Your Money</strong>
                     </h1>
 
